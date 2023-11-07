@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
+}
+
+body {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/bg-concert3.jpg);
+  }
+  
+  h1 {
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+  }
+  
+  p {
+    color: #fff;
+    position: absolute;
+    left: 50px;
+    top: 270px;
+    font-size: 1.1rem;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  ul {
+    float: right; 
+  }
+  
+  ul li {
+    float: left;
+    margin-top: 12px;
+  }
+
+
+  ul li:nth-child(1) {
+   position: absolute;
+   top: -20px;
+    right: -6px;
+  }
+  
+  ul li:nth-child(2) {
+    position: absolute;
+    top: 291px;
+    right: 619px;
+  }
+  
+  ul li:nth-child(3) {
+    position: absolute;
+    top: 291px;
+    right: -6px;
+  }
+  
+  ul li:nth-child(4) {
+    position: absolute;
+    top: 603px;
+    right: 1244px;
+  }
+  
+  ul li:nth-child(5) {
+    position: absolute;
+    top: 603px;
+    right: 619px;
+  }
+  
+  ul li:nth-child(6) {
+    position: absolute;
+    top: 603px;
+    right: -6px;
+  }
+
+  ul li{
+    border: hsl(0, 0%, 100%) solid 1px;
+    text-align: left;
+    height: 311px;
+    width: 623px;
+  }
+
+  ul li:hover{
+    background: rgba(192, 189, 189, 0.797);
+  }
+
+  ul li a:hover span{
+    color: black;
+    text-decoration: underline 2px;
+    transform: translate(-70px, -70px) scaleX(1);
+    
+  }
+  
+  ul li a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+
+
+
+
+  
+
+
+  /* Animaciones */
+
+.cont-general {
+    animation: moveUp 1.9s ease-out forwards;
+  }
+  
+  @keyframes moveUp {
+    from {
+      transform: translateY(70px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  ul li a:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out; 
+  }
